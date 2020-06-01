@@ -1,0 +1,261 @@
+$primary-color: #fafafa;
+$sec-color: #284B63;
+$nav-color:#14110F;
+$wap: #4FCE5D;
+$cyan: #E0FBFC;
+$text: #293241;
+$sienna:#EE6C4D;
+
+
+
+body, html {
+    padding:0;
+    margin:0;
+}
+
+#masthead {
+   transition: margin-left .2s;
+}
+
+.masthead {
+
+    height:90vh;
+    background-image: url("bg.jpg");
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    display:flex;
+    flex-direction: column;
+    padding-top:5rem;
+    color:$cyan;
+ 
+
+
+
+    h1 {
+        opacity:0.6;
+      
+
+
+    }
+
+    .btn1 {
+      color:$cyan;
+      background-color:$sienna;
+      border:none;
+    }
+
+
+
+    p {
+
+        font-size:1.5rem;
+        line-height:1.6;
+        opacity:0.6;
+    }
+
+    .btn1 {
+      text-align: center;
+      font-size:25px;
+    }
+
+
+}
+
+// ---------------------------
+// Vars & Helper Functions
+// ---------------------------
+
+
+  
+  // ---------------------------
+  // Main Navigation Menu
+  // ---------------------------
+  
+ 
+.modal {
+    height:500px;
+}
+
+.modal-title {
+    text-align: center;
+}
+
+.modal-body {
+   display:flex;
+   justify-content: center;
+   align-items: center;
+}
+
+
+
+.hit {
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    .social {
+        display:flex;
+        flex-direction:row;
+    }
+
+}
+
+
+
+
+.fa-whatsapp {
+    color:#4FCE5D;
+}
+
+.fa-instagram {
+    color: #833AB4;
+}
+
+
+.modal-header {
+    background-color:$sec-color;
+    color:white;
+    padding:30px;
+}
+
+.sidenav {
+  height: 100%;
+  width:0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+
+  background-color:$nav-color;
+  overflow-x: hidden;
+  transition: 0.2s;
+  
+
+  .wrapper {
+    height:100%;
+    width:0;
+    display:flex;
+    flex-direction:column;  
+    justify-content: center;
+    align-items:center;
+    
+
+    
+  }
+
+
+
+  .text {
+    p {
+      color:white;
+
+    }
+
+    .rowT {
+      display:flex;
+      justify-content: center;
+      align-items:center;
+      width:100%;
+    }
+
+ 
+    height:100%;
+    width:100%;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+
+
+      .fas, .fa {
+        color:white;
+        opacity:0.8;
+        
+      }
+    
+   
+  }
+
+
+
+  
+}
+
+
+
+
+.sidenav a {
+
+
+  text-decoration: none;
+
+  color: whitesmoke;
+  display: block;
+  transition: 0.3s;
+  font-size:30px;
+
+
+ 
+}
+
+
+
+
+.closebtn {
+  position:absolute;
+  top:5px;
+  right:5px;
+}
+
+#main {
+  transition: margin-left .5s;
+
+  position:fixed;
+  width:100%;
+}
+
+
+.but-nav {
+  position:absolute;
+  right:10px;
+  top:10px;
+}
+
+.fcard-container {
+  width:100%;
+  height:300px;
+  border: 1px solid black;
+  perspective: 1000px;
+}
+
+.fcard-container:hover .fcard {
+  transform:rotateY(180deg);
+}
+
+.fcard {
+  width:100%;
+  height:100%;
+  transform-style:preserve-3d;
+  transition: transform 1s;
+}
+
+.fcard-front, .fcard-back {
+  position:absolute;
+  width:100%;
+  height:100%;
+  backface-visibility: hidden;
+}
+
+
+.fcard-front {
+ background-color:red;
+}
+
+.fcard-back {
+  background-color:blue;
+}
+
+.fcard-back {
+  transform: rotateY(180deg);
+}
